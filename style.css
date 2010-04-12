@@ -1,0 +1,87 @@
+/*
+Theme Name: Newness
+Theme URI: http://wordpress.org/
+Description: A simple three column thing
+Version: 1
+Author: John Cantrell
+Author URI: http://john.notsoevil.net
+Tags: three column green simple typographic
+*/
+
+#stream ul {
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+
+#stream li {
+	padding:0;
+	margin:0;
+	margin-bottom:15px;
+}
+
+#stream .lifestream li {
+	padding-left:18px
+}
+
+.lifestream object {
+	margin-left:-18px;
+}
+
+#header a {
+	color:#1a6802;
+	text-decoration:none;
+	font-size:50px;
+}
+#header h1 { 
+	background-color:#3ea61d;
+	color:#1a6802;
+	text-shadow:#0d2406 -1px -1px 1px ;
+	margin-bottom:0;
+	padding-left:10px;
+	padding-top:20px;
+	line-height:.65;
+}
+#header .description {
+	background-color:#1a6802;
+	color:#3ea61d;
+	text-shadow:#0d2406 1px 1px 1px ;
+	line-height:.7;
+	font-weight:bold;
+	font-size:18px;
+	text-align:right
+}
+#header {
+	margin-bottom:60px
+}
+body {
+	color:#fff;
+	background-color:#1a6802;
+	font-size:14px;
+}
+h2 a {
+	color:#a1e118;
+	text-shadow: #000 1px 1px 5px;
+	text-decoration:none;
+}
+h2 {
+	margin-bottom:0px;
+	color:#a1e118;
+	text-shadow: #000 1px 1px 5px;
+}
+a:link {
+	color:#a1e118;
+	text-decoration:none
+}
+a:visited {
+	color:#a1e118;
+	text-decoration:none
+}
+a:hover {
+	color:#a1e118;
+	text-decoration:none
+}
+a:active {
+	color:#a1e118;
+	text-decoration:none
+}
