@@ -56,7 +56,7 @@ Tags: three column green simple typographic
 }
 body {
 	color:#fff;
-	background-color:#1a6802;
+	background-color:#4d4745;
 	font-size:14px;
 }
 h2 a {
@@ -85,3 +85,8 @@ a:active {
 	color:#a1e118;
 	text-decoration:none
 }
+.post-links {float:right}
+.post-info {float:left}
+
+#streams li {float:left; width:32%}
+#streams img {vertical-align:middle}

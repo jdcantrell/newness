@@ -7,6 +7,23 @@
 get_header(); ?>
 
 	<div id="stream" role="complementary" class="grid_9">
+		<ul id="streams" >
+			<li>
+				<a href="http://identi.ca/keare">
+					<img src="<?php bloginfo('template_directory')?>/images/identica.png" alt="Identi.ca">
+					Identica
+				</a>
+			<li>
+				<a href="http://delicious.com/keare">
+					<img src="<?php bloginfo('template_directory')?>/images/delicious.png" alt="Identi.ca">
+					Delicious
+				</a>
+			<li>
+				<a href="http://vimeo.com/user1669086">
+					<img src="<?php bloginfo('template_directory')?>/images/vimeo.png" alt="Identi.ca">
+					Vimeo
+				</a>
+		</ul>
 		<ul>
 			<?php 	/* Widgetized sidebar, if you have the plugin installed. */
 					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Large') ) : ?>
