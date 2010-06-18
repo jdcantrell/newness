@@ -1,5 +1,5 @@
 /*
-Theme Name: Newness
+Theme Name: Project Awesome
 Theme URI: http://wordpress.org/
 Description: A simple three column thing
 Version: 1
@@ -7,86 +7,99 @@ Author: John Cantrell
 Author URI: http://john.notsoevil.net
 Tags: three column green simple typographic
 */
-
-#stream ul {
-	list-style:none;
-	padding:0;
-	margin:0;
-}
-
-#stream li {
-	padding:0;
-	margin:0;
-	margin-bottom:15px;
-}
-
-#stream .lifestream li {
-	padding-left:18px
-}
-
-.lifestream object {
-	margin-left:-18px;
-}
-
-#header a {
-	color:#1a6802;
-	text-decoration:none;
-	font-size:50px;
-}
-#header h1 { 
+body { 
 	background-color:#3ea61d;
-	color:#1a6802;
-	text-shadow:#0d2406 -1px -1px 1px ;
-	margin-bottom:0;
-	padding-left:10px;
-	padding-top:20px;
-	line-height:.65;
 }
-#header .description {
-	background-color:#1a6802;
-	color:#3ea61d;
-	text-shadow:#0d2406 1px 1px 1px ;
-	line-height:.7;
-	font-weight:bold;
-	font-size:18px;
-	text-align:right
+
+#page {
+	background-color:#eeeeee;
+	padding-top:4px;
+	margin-top:30px;
 }
 #header {
-	margin-bottom:60px
+	margin: 0px 5px;
+	background-color:#fff;
 }
-body {
-	color:#fff;
-	background-color:#4d4745;
-	font-size:14px;
+#content {
+	margin:0px 4px;
+	background-color:#fff;
+	width:948px;
+	padding:2px;
 }
-h2 a {
-	color:#a1e118;
-	text-shadow: #000 1px 1px 5px;
+/* --- Menu Styles --- */
+#access {
+	background-color:#333;
+	width:100%;
+	margin: 0 auto;
+	display:block;
+	float:left;
+}
+#access .menu-header,
+div.menu {
+	font-size: 13px;
+	margin-left: 12px;
+}
+#access .menu-header ul,
+div.menu ul {
+	list-style: none;
+	margin: 0;
+}
+#access .menu-header li,
+div.menu li {
+	float:left;
+	position: relative;
+}
+#access a {
+	display:block;
 	text-decoration:none;
+	color:#aaa;
+	padding:0 10px;
+	line-height:24px;
 }
-h2 {
-	margin-bottom:0px;
-	color:#a1e118;
-	text-shadow: #000 1px 1px 5px;
+#access ul ul {
+	display:none;
+	position:absolute;
+	top:24px;
+	left:0;
+	float:left;
+	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+	z-index: 99999;
 }
-a:link {
-	color:#a1e118;
-	text-decoration:none
+#access ul ul li {
+	min-width: 180px;	
 }
-a:visited {
-	color:#a1e118;
-	text-decoration:none
+#access ul ul ul {
+	left:100%;
+	top:0;
 }
-a:hover {
-	color:#a1e118;
-	text-decoration:none
+#access ul ul a {
+	background:#333;
+	height:auto;
+	line-height:1em;
+	padding:10px;
+	width: 160px;
 }
-a:active {
-	color:#a1e118;
-	text-decoration:none
+#access li:hover > a,
+#access ul ul :hover > a {
+	color:#fff;
+	background:#333;
 }
-.post-links {float:right}
-.post-info {float:left}
+#access ul li:hover > ul {
+	display:block;
+}
+#access ul li.current_page_item > a,
+#access ul li.current-menu-ancestor > a,
+#access ul li.current-menu-item > a,
+#access ul li.current-menu-parent > a {
+	color: #fff;
+}
 
-#streams li {float:left; width:32%}
-#streams img {vertical-align:middle}
+* html #access ul li.current_page_item a,
+* html #access ul li.current-menu-ancestor a,
+* html #access ul li.current-menu-item a,
+* html #access ul li.current-menu-parent a,
+* html #access ul li a:hover {
+	color:#fff;
+}

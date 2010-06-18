@@ -6,31 +6,6 @@
 
 get_header(); ?>
 
-	<div id="stream" role="complementary" class="grid_9">
-		<ul id="streams" >
-			<li>
-				<a href="http://identi.ca/keare">
-					<img src="<?php bloginfo('template_directory')?>/images/identica.png" alt="Identi.ca">
-					Identica
-				</a>
-			<li>
-				<a href="http://delicious.com/keare">
-					<img src="<?php bloginfo('template_directory')?>/images/delicious.png" alt="Identi.ca">
-					Delicious
-				</a>
-			<li>
-				<a href="http://vimeo.com/user1669086">
-					<img src="<?php bloginfo('template_directory')?>/images/vimeo.png" alt="Identi.ca">
-					Vimeo
-				</a>
-		</ul>
-		<ul>
-			<?php 	/* Widgetized sidebar, if you have the plugin installed. */
-					if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Large') ) : ?>
-			<li>Please setup your stream bar!
-			<?php endif; ?>
-		</ul>
-	</div>
 	<div id="content" role="main" class="grid_15">
 
 	<?php if (have_posts()) : ?>
@@ -63,9 +38,9 @@ get_header(); ?>
 
 	<?php endif; ?>
 
-	</div>
 	<div class="clear"></div>
 
 <?php get_sidebar(); ?>
 
+	</div>
 <?php get_footer(); ?>
