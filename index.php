@@ -14,12 +14,13 @@ get_header(); ?>
 
 			<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+				<div class="after-post-links">
+				<span class="post-info"> <?php the_time('F jS Y') ?> | <?php the_category(', ') ?></span>
+				<span class="post-links"><?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></span>&nbsp;
+				</div>
 				<div class="entry">
 					<?php the_content('Read the rest of this entry &raquo;'); ?>
 				</div>
-				<p class="after-post-links">
-				<span class="post-info"> <?php the_time('F jS Y') ?> | <?php the_category(', ') ?></span><span class="post-links"><?php edit_post_link('Edit', '', ' | '); ?>  <?php comments_popup_link('No Comments &#187;', '1 Comment &#187;', '% Comments &#187;'); ?></span>&nbsp;
-				</p>
 
 			</div>
 

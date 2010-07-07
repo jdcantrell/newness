@@ -13,13 +13,18 @@ body {
 
 #page {
 	background-color:#eeeeee;
-	padding-top:4px;
+	padding-top:0px;
 	margin-top:30px;
 }
 #header {
-	margin: 0px 5px;
-	background-color:#fff;
-}
+	margin: 0px 0px;
+	background-color:#1b3a68;
+	color:#fff;
+	text-align:left;
+} 
+#header h1 {font-size:44px;padding:0px 0px;font-weight:normal;margin-bottom:0}
+#header a { color:#fff;text-decoration:none}
+#header div {float:right;margin-top:-20px}
 #content {
 	margin:0px 4px;
 	background-color:#fff;
@@ -27,8 +32,9 @@ body {
 	padding:2px;
 }
 /* --- Menu Styles --- */
+.menu li {margin: 0px}
 #access {
-	background-color:#333;
+	background-color:#2a2a2a;
 	width:100%;
 	margin: 0 auto;
 	display:block;
@@ -36,7 +42,7 @@ body {
 }
 #access .menu-header,
 div.menu {
-	font-size: 13px;
+	font-size: 24px;
 	margin-left: 12px;
 }
 #access .menu-header ul,
@@ -52,7 +58,7 @@ div.menu li {
 #access a {
 	display:block;
 	text-decoration:none;
-	color:#aaa;
+	color:#ccc;
 	padding:0 10px;
 	line-height:24px;
 }
@@ -103,3 +109,22 @@ div.menu li {
 * html #access ul li a:hover {
 	color:#fff;
 }
+/* end menu styles */
+h2 {margin-bottom:5px}
+.post p {text-indent:1.5em}
+.post a {text-decoration:none;
+	color:#3ea61d;
+}
+.entry {font-size:16px;color:#555}
+.after-post-links {
+	border-style:solid;
+	border-color:#aaa;
+	border-width:1px 0px;
+	background-color:#fafafa;
+	padding:0px 4px;
+	margin-bottom:5px;
+	color:#555;
+}
+.post-info {float:left}
+.post-links {float:right}
+
