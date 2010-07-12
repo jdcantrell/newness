@@ -23,13 +23,17 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<div id="page" class="container_24">
-	<div id="header" role="banner">
+<div id="header" role="banner">
+	<div class="container_24">
 			<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-			<div class="description"><?php bloginfo('description'); ?></div>
+			<div id="blog-tag" class="description"><?php bloginfo('description'); ?></div>
 	</div>
+</div>
+<div id="access" role="navigation">
+	<div class="container_24">
 	<?php //borrowed from twenty ten ?>
-	<div id="access" role="navigation">
 		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
 		<?php wp_nav_menu( array( 'sort_column' => 'menu_order', 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 	</div><!-- #access -->
+</div>
+<div id="page" class="container_24">

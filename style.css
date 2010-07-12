@@ -7,12 +7,16 @@ Author: John Cantrell
 Author URI: http://john.notsoevil.net
 Tags: three column green simple typographic
 */
+
 body { 
 	background-color:#3ea61d;
+	background-color:#fff;
+	font-size:16px;
+	color:#555;
 }
 
 #page {
-	background-color:#eeeeee;
+	background-color:#fff;
 	padding-top:0px;
 	margin-top:30px;
 }
@@ -22,9 +26,21 @@ body {
 	color:#fff;
 	text-align:left;
 } 
-#header h1 {font-size:44px;padding:0px 0px;font-weight:normal;margin-bottom:0}
-#header a { color:#fff;text-decoration:none}
-#header div {float:right;margin-top:-20px}
+#header h1 {
+	font-size:44px;
+	padding:0px 0px;
+	font-weight:normal;
+	margin-bottom:0
+}
+#header a {
+	color:#fff;
+	text-decoration:none
+}
+#blog-tag {
+	float:right;
+	margin-top:-20px;
+	font-size:13px;
+}
 #content {
 	margin:0px 4px;
 	background-color:#fff;
@@ -110,9 +126,9 @@ div.menu li {
 	color:#fff;
 }
 /* end menu styles */
-h2 {margin-bottom:5px}
+h2 {margin-bottom:5px;}
 .post p {text-indent:1.5em}
-.post a {text-decoration:none;
+a {text-decoration:none;
 	color:#3ea61d;
 }
 .entry {font-size:16px;color:#555}
@@ -127,4 +143,10 @@ h2 {margin-bottom:5px}
 }
 .post-info {float:left}
 .post-links {float:right}
-
+.comment-author {
+	font-size:16px;
+	font-weight:bold
+}
+.alignleft {float:left}
+.alignright {float:right}
+.navigation {height:25px}
