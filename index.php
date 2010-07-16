@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-	<div id="content" role="main" class="grid_15">
+	<div id="content" role="main" class="grid_24">
 
 	<?php if (have_posts()) : ?>
 

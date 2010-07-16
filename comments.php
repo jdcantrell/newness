@@ -25,9 +25,9 @@
 		<div class="alignright"><?php next_comments_link() ?></div>
 	</div>
 
-	<ol class="commentlist">
-	<?php wp_list_comments(); ?>
-	</ol>
+	<ul class="commentlist">
+	<?php wp_list_comments('type=comment&callback=superblue_comment'); ?>
+	</ul>
 
 	<div class="navigation">
 		<div class="alignleft"><?php previous_comments_link() ?></div>
