@@ -9,21 +9,19 @@ Tags: three column green simple typographic
 */
 
 body { 
-	background-color:#3ea61d;
-	background-color:#fff;
+	background-color:#fffffc;
 	font-size:16px;
 	color:#555;
 }
 
 #page {
-	background-color:#fff;
 	padding-top:0px;
 	margin-top:30px;
 }
 #header {
 	margin: 0px 0px;
 	background-color:#1b3a68;
-	color:#fff;
+	color:#fffdf9;
 	text-align:left;
 } 
 #header h1 {
@@ -33,7 +31,7 @@ body {
 	margin-bottom:0
 }
 #header a {
-	color:#fff;
+	color:#fffdf9;
 	text-decoration:none
 }
 #blog-tag {
@@ -43,13 +41,13 @@ body {
 }
 #content {
 	margin:0px 0px;
-	background-color:#fff;
 	padding:2px;
 }
 /* --- Menu Styles --- */
 .menu li {margin: 0px}
 #access {
 	background-color:#2a2a2a;
+	padding-bottom:2px;
 	width:100%;
 	margin: 0 auto;
 	display:block;
@@ -75,12 +73,13 @@ div.menu li {
 	text-decoration:none;
 	color:#ccc;
 	padding:0 10px;
-	line-height:24px;
+	line-height:26px;
 }
 #access ul ul {
 	display:none;
 	position:absolute;
-	top:24px;
+	font-size:16px;
+	top:26px;
 	left:0;
 	float:left;
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
@@ -99,7 +98,7 @@ div.menu li {
 	background:#333;
 	height:auto;
 	line-height:1em;
-	padding:10px;
+	padding:8px 10px;
 	width: 160px;
 }
 #access li:hover > a,
@@ -185,3 +184,13 @@ cite {font-style:normal}
 	margin-top:10px;
 
 }
+a:hover {text-decoration:underline}
+pre, code {
+	font-size:14px;
+	font-family:monospace;
+	background-color:#ffffff;
+	border:1px solid #eee;
+	padding:4px;
+	display:block;
+}
+.divder {margin-bottom:5px}

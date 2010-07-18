@@ -8,17 +8,20 @@ $content_width = 450;
 
 automatic_feed_links();
 
-if ( function_exists('register_sidebar') ) {
+/*if ( function_exists('register_sidebar') ) {
 	register_sidebar(array(
 		'name' =>'Bottom',
-		'before_widget' => '<li id="%1$s" class="grid_8 widget %2$s">',
+		'before_widget' => '<li id="%1$s" class="flat-list widget %2$s">',
 		'after_widget' => '</li>',
-		'before_title' => '<h2 class="widgettitle">',
-		'after_title' => '</h2>',
+		'before_title' => '<div class="grid_3 widgettitle">',
+		'after_title' => '</div>',
 	));
-}
+}*/
 
-
+register_nav_menus( array(
+	'primary' => 'Primary Navigation',
+) );
+
 function superblue_comment($comment, $args, $depth) {
 	$GLOBALS['comment'] = $comment; ?>
 	<li <?php comment_class(); ?> id="li-comment-<?php comment_ID() ?>">
