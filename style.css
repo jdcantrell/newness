@@ -56,7 +56,6 @@ body {
 #access .menu-header,
 div.menu {
 	font-size: 24px;
-	margin-left: 12px;
 }
 #access .menu-header ul,
 div.menu ul {
@@ -129,14 +128,17 @@ h2 {
 	color:#3ea61d;
 }
 h3 {
-	margin-bottom:5px;
+	margin-bottom:0px;
+	font-weight:normal;
 	color:#3ea61d;
 }
 .post {clear:both}
 p {text-indent:1.5em}
-a {text-decoration:none;
+h2 a {text-decoration:none;
 	color:#3ea61d;
 }
+a {text-decoration:none; color:#2f65b4}
+a:hover {text-decoration:underline}
 .entry {font-size:16px;color:#555}
 .after-post-links {
 	font-size:13px;
@@ -194,3 +196,4 @@ pre, code {
 	display:block;
 }
 .divder {margin-bottom:5px}
+#footer {margin-bottom:15px}

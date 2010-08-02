@@ -31,7 +31,7 @@ $posts = get_posts(array('numberposts' => 1, 'category_name'=> $category[0]));
 	foreach($posts as $post) {
 		setup_postdata($post);
 	?><div class="grid_12">
-		<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+		<h2><a href="projects/<?php echo $category[0]; ?>" rel="bookmark">Recent Updates</a></h2>
 		<?php the_excerpt(); ?>
 	</div><?
 	}
