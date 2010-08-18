@@ -197,3 +197,13 @@ pre, code {
 }
 .divder {margin-bottom:5px}
 #footer {margin-bottom:15px}
+.code {
+	padding-left:18px;
+	padding-right:5px;
+	background: transparent url(images/code.png) no-repeat center left;
+}
+.demo {
+	padding-left:18px;
+	padding-right:5px;
+	background: transparent url(images/demo.png) no-repeat center left;
+}
